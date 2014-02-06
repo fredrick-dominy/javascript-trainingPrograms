@@ -9,7 +9,7 @@ function mystery() {
     results;
 }*/
 
-console.log(mystery()); // returns undefined 
+
 
 // rewrite
 
@@ -17,3 +17,6 @@ var mystery = function() { // this is a function mystery that ...
   var results = {sanity: 'Hello'}; // creates a variable object property
   return results;
 };
+
+console.log(mystery()); // returns {santity: 'Hello'} 
+// PASSED!
