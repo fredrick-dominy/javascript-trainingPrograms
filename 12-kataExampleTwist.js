@@ -7,7 +7,8 @@ var websites = [];
 
 // probably will need to push 'codewars' to the back of the 
 // array 1000 times using a for loop.
-for (var i = 0; i < 5; i+= 1) {
+for (var i = 0; i < 1000; i+= 1) {
   websites.push('codewars');
 }
-console.log(websites);
+// submitted the above code...
+// PASSED!
