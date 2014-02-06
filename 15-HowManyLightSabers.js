@@ -6,3 +6,16 @@
 // lightsabers. Anyone else owns 0. No starting help here -- 
 // you'll need to know how to write a function that accepts 
 // a parameter and returns a value based on that parameter.
+'use strict';
+var howManyLightsabersDoYouOwn = function(programmer) {
+  if (programmer === 'Zach') {
+    return 18;
+  } else {
+    return 0;
+  }
+};
+
+console.log(howManyLightsabersDoYouOwn('fred'));
+console.log(howManyLightsabersDoYouOwn('Zach'));
+
+// initial commit... 
