@@ -15,15 +15,22 @@ You have to use the filter-method of Javascript, which returns
 each element of the array for which the filter-method returns true.*/
 
 'use strict';
+
+
+
 function searchNames( logins ){
-  logins.
+  //return logins.filter(function(val){return val.indexOf('_')!= false})}
+
+  //return logins.filter(function(args){args.indexOf('_')});
+  return logins.filter(function(x) { if(x.indexOf('f')=== true) { return x }})
 }
+
 
 var testSearch01 = searchNames([ [ "foo", "foo@foo.com" ], [ "bar_", "bar@bar.com" ] ]);
 console.log(testSearch01);
 
 // code brought in from msdn reference...
-/*function IsC(value) {
+/*function IsC(value) {SB
     var firstChar = value.substr(0, 3);
     if (firstChar.toLowerCase() == "css")
         return true;
