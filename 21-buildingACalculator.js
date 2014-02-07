@@ -13,4 +13,21 @@ Only integers are expected to be passed in as arguments,
 and the divide method should return 'false' when trying the divide by zero.*/
 
 'use strict';
-var Calculator = {};
+var Calculator = {
+  'divide': function(x,y) {
+    if (y !== 0) {
+      return x/y;
+    } else {
+      return false;
+    }
+  },
+  'add': function(x,y) {
+    return x + y;
+  },
+  'multiply': function(x,y) {
+    return x*y;
+  },
+  'subtract': function(x,y){
+    return x-y;
+  }
+};  // PASSED!
