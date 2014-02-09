@@ -71,3 +71,17 @@ function sumDigits(number) {
     return +a + +b;
   }, 0);
 }
+
+// The reduce() method applies a function against an accumulator and 
+// each value of the array (from left-to-right) has to reduce it to a single value.
+// syntax : 
+
+//    arr.reduce(callback, [initialValue])
+
+var someFunction = function(arg1,arg2,callback) {
+  var myNumber = Math.ceil(Math.random()*(arg1 - arg2) + arg2);
+  callback(myNumber);  // callback the myNumber 
+}
+someFunction(1,4, function(num) {console.log("callback called! " + num);});
+
+
