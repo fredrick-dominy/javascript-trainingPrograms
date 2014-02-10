@@ -49,4 +49,12 @@ var range = function(start,end,step) {
       }
 };
 
-console.log(range(5));
+// here was someone's much more articulate solution...
+function range1(start, end, step) {
+  if(arguments.length < 2) end=start | 0, start=0;
+  for(var r= [], i=Math.floor((end-start) / (step ? step : 1)); i>0; r.unshift(start + (step == null ? 1 : step) * --i));
+  return r;
+}
+
+console.log(range1(5));
+
