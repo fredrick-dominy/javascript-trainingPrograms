@@ -12,24 +12,44 @@ Note that ranges that stop before they start are considered to be zero-length in
 */
 function range(start, end, step) {
   var startFrom = start;
-  console.log(startFrom);
+  //console.log(startFrom);
   var endAt = end; //11
-  console.log(endAt);
+  if (endAt === 0) {
+    return [];
+  }
+  if (endAt === undefined) {
+    startFrom = 0;
+    endAt = start;
+  }
+  //console.log(endAt);
+
   var jump = step; // currently undefined
+  var rangeArray = [startFrom];
     if (jump === undefined) {
       jump = 1;
     }
-    console.log(jump);
+    if (jump === 0) {
+        for (i = startFrom; i < endAt-1; i+= 1) {
+            rangeArray.push(startFrom);
+          }
+        return rangeArray;
+      }
+ 
+    //console.log(jump);
   // count from startFrom to endAt by jump...
-  var rangeArray = [start];
-  console.log(rangeArray);
+  //console.log(rangeArray);
+  if (endAt > 0){
+    for (var i = startFrom; i < endAt-jump; i+= jump) {
+      rangeArray.push(startFrom += jump);
+    };
+} 
 
-  for (var i = startFrom; i < endAt-jump
-    ; i+= jump) {
-    rangeArray.push(startFrom += jump);
-  };
+  if (endAt < 0) {
+    for (var i = startFrom; i > endAt-jump; i+=jump) {
+      rangeArray.push(startFrom += jump)
+    };
+  }
   return rangeArray;
 }
 
-console.log(range(10,0,1)); // [1,2,3,4,5,6,7,8,9,10]
-//console.log(range(0,30,5)); // [0,5,10,15,20,25]
+console.log(range(1,-4, 0));
