@@ -21,24 +21,29 @@ be empty object literal { }
 */
 'use strict';
 var count = function(string) {
-  console.log(string);
-  if (string === undefined) {
-    return {};
-  }
+    // return the empty object with an empty argument
+    if (string === undefined) {
+      return {};
+    }
+
   var strArray = string.split(''); // array with each character
   var letterCounter = {}; // create empty object
   var n = strArray.length;
 
+  // if there are spaces in the string, remove them.
     for (var i = 0; i < n; i+= 1) {
       if (strArray[i] === ' ') {
         strArray.splice(i,1);
       }
     }
-  //console.log(strArray);
+
+  // initialize each property
   for (var i = 0; i < n; i+= 1) {
     var n = strArray.length;
     letterCounter[strArray[i]]=0;
   }
+
+  // count each property value
   for (var i = 0; i < n; i+= 1) {
     var n = strArray.length;
     letterCounter[strArray[i]]+=1;
@@ -46,4 +51,6 @@ var count = function(string) {
   return(letterCounter);
 };
 
-console.log(count('hello my dear how are you today? Much love. !! woohoo!!!!'));
+// not my function... greatly abstracted
+function countA (string) {  
+  return string.split('').reduce(function(r,c) {r[c] = (r[c]||0)+1;return r;},{});}
