@@ -54,3 +54,12 @@ var count = function(string) {
 // not my function... greatly abstracted
 function countA (string) {  
   return string.split('').reduce(function(r,c) {r[c] = (r[c]||0)+1;return r;},{});}
+
+// I like this one....
+function count (string) {  
+  var count = {};
+  string.split('').forEach(function(s) {
+     count[s] ? count[s]++ : count[s] = 1; //if string[s] is false set to 1.. true add 1
+  });
+  return count;
+}

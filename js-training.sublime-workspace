@@ -1,0 +1,929 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"letter",
+				"letterCounter"
+			],
+			[
+				"para",
+				"paragraph"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"co",
+				"console	 FMD Console.log statement "
+			],
+			[
+				"cons",
+				"consolidatedArray"
+			],
+			[
+				"con",
+				"consolidatedArray"
+			],
+			[
+				"var",
+				"varPrompt	 Std Var Command "
+			],
+			[
+				"check",
+				"checkText"
+			],
+			[
+				"chec",
+				"checkText"
+			],
+			[
+				"che",
+				"checkText"
+			],
+			[
+				"rang",
+				"rangeArray"
+			],
+			[
+				"ena",
+				"endAt"
+			],
+			[
+				"end",
+				"endAt"
+			],
+			[
+				"ran",
+				"range2"
+			],
+			[
+				"en",
+				"end"
+			],
+			[
+				"star",
+				"startFrom"
+			],
+			[
+				"Star",
+				"startFrom"
+			],
+			[
+				"strin",
+				"stringifiedSummation"
+			],
+			[
+				"str",
+				"stringifiedArray"
+			],
+			[
+				"in",
+				"indexOf"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"va",
+				"varPrompt	 Std Var Command "
+			],
+			[
+				"get",
+				"getPlanetName"
+			],
+			[
+				"ten",
+				"tenAgain"
+			],
+			[
+				"v",
+				"variable"
+			],
+			[
+				"prot",
+				"proto	Prototype"
+			],
+			[
+				"is",
+				"isDeadly"
+			],
+			[
+				"can",
+				"canFly"
+			],
+			[
+				"fun",
+				"funcVar	 var = funct "
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"arg",
+				"arguments"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"rev",
+				"revoke"
+			],
+			[
+				"com",
+				"composeB"
+			],
+			[
+				"metho",
+				"methodize"
+			],
+			[
+				"argu",
+				"arguMental"
+			],
+			[
+				"fu",
+				"funcVar	 var = funct "
+			],
+			[
+				"sor",
+				"sort	SortIncreasing"
+			],
+			[
+				"strun",
+				"strungArray"
+			],
+			[
+				"average",
+				"averageTot"
+			],
+			[
+				"add",
+				"addGrade"
+			],
+			[
+				"_",
+				"_grades"
+			],
+			[
+				"ob",
+				"objNameInFile"
+			],
+			[
+				"fil",
+				"fileRef"
+			],
+			[
+				"file",
+				"fileMaster"
+			],
+			[
+				"test",
+				"testList2"
+			],
+			[
+				"tes",
+				"testList3"
+			],
+			[
+				"f",
+				"fn	Function"
+			],
+			[
+				"num",
+				"numArgArray"
+			],
+			[
+				"nu",
+				"numArgArray"
+			],
+			[
+				"a",
+				"afn	Anoynmous Function"
+			],
+			[
+				"ro",
+				"rollSeriousShit"
+			],
+			[
+				"total",
+				"totalSum"
+			],
+			[
+				"tot",
+				"totalSum"
+			],
+			[
+				"sort",
+				"sortArray"
+			],
+			[
+				"so",
+				"sortString"
+			],
+			[
+				"ad",
+				"addVal"
+			],
+			[
+				"index",
+				"indexVal"
+			],
+			[
+				"ma",
+				"maximumSum"
+			],
+			[
+				"new",
+				"newArray"
+			],
+			[
+				"n",
+				"numsArray"
+			],
+			[
+				"root",
+				"rootG"
+			],
+			[
+				"g",
+				"gOld"
+			],
+			[
+				"sq",
+				"squareRootOf"
+			],
+			[
+				"hou",
+				"hourlyRate"
+			],
+			[
+				"pa",
+				"passedArray"
+			],
+			[
+				"p",
+				"plural"
+			],
+			[
+				"proto",
+				"proto	Prototype"
+			],
+			[
+				"pro",
+				"proto	Prototype"
+			],
+			[
+				"beer",
+				"beerSong"
+			],
+			[
+				"b",
+				"bd	border"
+			],
+			[
+				"t",
+				"th	text-height"
+			],
+			[
+				"fi",
+				"firstName"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"las",
+				"lastName"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"firs",
+				"firstName"
+			],
+			[
+				"wr",
+				"write"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"Re",
+				"RedDiv"
+			],
+			[
+				"Blue",
+				"BlueDiv"
+			],
+			[
+				"bl",
+				"blue"
+			],
+			[
+				"div",
+				"div"
+			],
+			[
+				"four",
+				"fourNum"
+			],
+			[
+				"fou",
+				"fourNum"
+			],
+			[
+				"copp",
+				"copperBottom"
+			],
+			[
+				"gun",
+				"gunDecks"
+			],
+			[
+				"we",
+				"weatherAble"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"taylor",
+				"taylor"
+			],
+			[
+				"yea",
+				"yearsUntilRetire"
+			],
+			[
+				"years",
+				"yearsLeft"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bu",
+				"button	Tag"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"te",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "01-7kyu-99bottles.js",
+			"settings":
+			{
+				"buffer_size": 903,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/node.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"git coma",
+				"Git: Custom Command"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"packr",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"updg",
+				"GitHub: Update Gist"
+			],
+			[
+				"updgis",
+				"GitHub: Update Gist"
+			],
+			[
+				"upd",
+				"GitHub: Update Gist"
+			],
+			[
+				"gis",
+				"GitHub: Update Gist"
+			],
+			[
+				"gist",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"pubgis",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pubgist",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"packres",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"packli",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packadi",
+				"Package Control: Disable Package"
+			],
+			[
+				"github: ",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"github cop",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"gitpubgis",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"packare",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pacinst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packarem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packaen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packagen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packdi",
+				"Package Control: Disable Package"
+			],
+			[
+				"packali",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"snippet ma",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"copy",
+				"File: Copy as Tag style"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 349.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/Users/Freximus/Google Drive/Software-Dev/delete.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/29-6kyu-countCharsString.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/EloquentJavaScript-chapter-04.js",
+		"/G/Users/Freximus/Documents/GitHub/MneumonicMajorSystem/MMS.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/MMS.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/29-7kyu-reject-function.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/29-6kyu-desperateRocketScientist.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/28-6kyu-theRangeFunction.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/27-7kyu-anagramDetection.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/26-7kyu-boiledEggs.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/25-7ku-SumNumDigits.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/hourlyToYearlySalary.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/multifile.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/program.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/refactoredGreeting.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/11-brokenCounter.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/24-7kyu-javascriptFilter-1.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/23-7kyu-noOdditiesHere.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/22-7kyu-esreverGnirts.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/21-buildingACalculator.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/20-7kyu-differentialAveraging.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/19-7kyu-MultiplyCharacters.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/18-returnToSanity.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/17-getPlanetName-ID.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/16-ShortLongShort.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/16-shiftyClosures.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/15-HowManyLightSabers.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/14-semiOptional.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/EloquentJavaScript-chapter-04.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/13-Function3-MultiplyingTwoNumbers.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/12-kataExampleTwist.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/11-brokenCounter.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/FrestBed.html",
+		"/G/Users/Freximus/Google Drive/Software-Dev/testSuite.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/log.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/push.sublime-snippet",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/varArray.sublime-snippet",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/varCmd.sublime-snippet",
+		"/G/Users/Freximus/Google Drive/Software-Dev/Resig-Functions.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/crockford-functions.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/10-findTheRemainder.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/monads.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/powerConstructor.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/quiz.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/test-del.html",
+		"/g/Users/Freximus/Google Drive/Software-Dev/crockford-functions.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/closure.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/average.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/09-CalculatingAverages.js",
+		"/G/Users/Freximus/Google Drive/MaroonProduct-web/fredrickdominy.com/index.html",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/JavaScript/for-()-{}.sublime-snippet",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/JavaScript/for-()-{}-(faster).sublime-snippet",
+		"/C/Program Files/Sublime Text 3/Packages/JavaScript.sublime-package",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/multifile.sublime-snippet",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/05-algorithm-square.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/jquery.js",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/vanilla.use_strict.sublime-snippet",
+		"/g/Users/Freximus/Google Drive/Software-Dev/delete.js",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/vanilla.iife.sublime-snippet",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/vanilla.require.sublime-snippet",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Installed Packages/JavaScript Snippets.sublime-package",
+		"/G/Users/Freximus/Google Drive/Software-Dev/PluralSight/gradeBook/tests/gradeTests.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/PluralSight/gradeBook/program.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/PluralSight/gradeBook/lib/grades.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/CalculatingAverages.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/ReturnSortedListOfObjects.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/listFile.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/functVar.sublime-snippet",
+		"/G/Users/Freximus/Google Drive/Software-Dev/09-CalculatingAverages.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/02-isNumber.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/dice.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/object-fun-delete.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/objGeneric.sublime-snippet",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/sortDecrease.sublime-snippet",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/sortDecrease.sublime.snippet",
+		"/G/Users/Freximus/Google Drive/Software-Dev/object-fun-delete",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/vanilla.console_log.sublime-snippet",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/console_log.sublime.snippet",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/User/docw.sublime-snippet",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/console_log.sublime.snippet",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/08-SortTheGiftCode.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/maxHeadroom.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/08-sleighAuthentication",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/07-ExerciseInSumming.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/07-ExerciseInSumming.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/refactoredGreeting",
+		"/G/Users/Freximus/Google Drive/Software-Dev/07-dontMakeMeRepeatMyself.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/03-pluraltest.js",
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/06-sortNumbers.js",
+		"/G/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/G/Users/Freximus/Google Drive/Software-Dev/05-sortNumbers.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/G/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/mms.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/G/Users/Freximus/Google Drive/Software-Dev/test-jshint.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/G/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/jscode.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/index.html",
+		"/g/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/jscode.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/mms.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/styleSheet.css",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/User/node.sublime-build",
+		"/g/Users/Freximus/Google Drive/Software-Dev/css/main.css",
+		"/g/Users/Freximus/Google Drive/Software-Dev/Archive of programs/99bottles.js",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/User/docw.sublime-snippet",
+		"/g/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/nonsense-code.js",
+		"/g/Users/Freximus/Google Drive/Software-Dev/Archive of programs/js-triNum.html",
+		"/G/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/styleSheet.css",
+		"/G/Users/Freximus/Google Drive/Software-Dev/ProblemSet01/index.html",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/G/Users/Freximus/Google Drive/Software-Dev/HPI-js.js",
+		"/G/Users/Freximus/Google Drive/Software-Dev/css/main.css",
+		"/G/Users/Freximus/Google Drive/Software-Dev/HPI-webapp.html",
+		"/G/Users/Freximus/Google Drive/Software-Dev/main.css",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/Gist/README.md",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
+		"/g/Users/Freximus/AppData/Roaming/Sublime Text 2/Packages/Gist/package-metadata.json"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"r",
+			"n",
+			"8vYmuJHboFvst9y",
+			"power",
+			"reductoText",
+			"consolidatedArray",
+			"spamCan",
+			"prototy",
+			"this",
+			"arguMental",
+			"six",
+			"one",
+			"factorial",
+			"logfactorial",
+			"argument",
+			"fred",
+			"arguments",
+			"return",
+			"argument",
+			"num",
+			"document.write",
+			"off",
+			"white ",
+			"hide",
+			"invisi",
+			"20px",
+			"fred",
+			"fred\nfred\nfred",
+			"this.age",
+			"numYears",
+			"\n",
+			"sauce",
+			"(\"type something\")",
+			"p",
+			"<h1>,+</h1>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "01-7kyu-99bottles.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 45.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 371.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 371.0
+	},
+	"project": "js-training.sublime-project",
+	"replace":
+	{
+		"height": 86.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"G:\\Users\\Freximus\\Google Drive\\Software-Dev\\Fred-Dev-Project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 384.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

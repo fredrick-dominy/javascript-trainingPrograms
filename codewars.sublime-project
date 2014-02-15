@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"MneumonicMajorSystem"
+			],
+			"follow_symlinks": true,
+			"path": "G:\\Users\\Freximus\\Documents\\GitHub"
+		}
+	]
+}
