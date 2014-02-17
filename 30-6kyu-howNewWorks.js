@@ -8,6 +8,7 @@ object as the “this” reference.
 
 Use this understanding of the new operator to create an instance 
 of the object MyObject, but do so without calling "new MyObject()".
+*/
 
 //*******************************************************
 // Implement the functionality of the 'new' operator as if you had the code:
@@ -16,9 +17,8 @@ of the object MyObject, but do so without calling "new MyObject()".
 //
 // Start with a simple empty Object literal.
 
+'use strict';
 var myObj = {};
-var MyObject = function() {
-  this.myObj = {};
+var MyObject = function(name) {
+  this.name = instanceof myObj;
 };
-
-console.log(myObj.instanceOf);
