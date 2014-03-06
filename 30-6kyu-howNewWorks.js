@@ -19,6 +19,8 @@ of the object MyObject, but do so without calling "new MyObject()".
 
 'use strict';
 var myObj = {};
-var MyObject = function(name) {
-  this.name = instanceof myObj;
-};
+
+
+// solutions as follows: 
+var myObj = { __proto__: MyObject.prototype };
+MyObject.call(myObj);

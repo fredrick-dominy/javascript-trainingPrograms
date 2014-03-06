@@ -399,7 +399,7 @@
 	"build_system": "Packages/User/node.sublime-build",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -596,6 +596,7 @@
 	},
 	"file_history":
 	[
+		"/G/Users/Freximus/Documents/GitHub/javascript-trainingPrograms/30-6kyu-howNewWorks.js",
 		"/G/Users/Freximus/Google Drive/Software-Dev/delete.js",
 		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
 		"/g/Users/Freximus/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
@@ -726,7 +727,7 @@
 	],
 	"find":
 	{
-		"height": 45.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -800,7 +801,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 45.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -841,10 +842,14 @@
 	{
 		"height": 371.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 184.0
+	},
 	"project": "codewars.sublime-project",
 	"replace":
 	{
-		"height": 86.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -862,7 +867,7 @@
 		[
 			[
 				"",
-				"G:\\Users\\Freximus\\Google Drive\\MaroonProduct-web\\fredrickdominy.com\\fmd-website.sublime-project"
+				"g:\\Users\\Freximus\\Google Drive\\Software-Dev\\Javascript-Practice.sublime-project"
 			]
 		],
 		"width": 380.0
