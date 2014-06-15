@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"str",
+				"stringydingy"
+			],
+			[
 				"letter",
 				"letterCounter"
 			],
@@ -74,10 +78,6 @@
 			[
 				"strin",
 				"stringifiedSummation"
-			],
-			[
-				"str",
-				"stringifiedArray"
 			],
 			[
 				"in",
@@ -395,13 +395,36 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "'use strict';\nfunction disemvowel(str) {\n  var arr = str.split('');\n  // console.log(arr);\n    for (var i = 0; i < arr.length; i += 1) {\n      if (arr[i]=== 'a' ||\n          arr[i]=== 'e' ||\n          arr[i]=== 'i' ||\n          arr[i]=== 'o' ||\n          arr[i]=== 'u' ||\n          arr[i]=== 'A' ||\n          arr[i]=== 'E' ||\n          arr[i]=== 'I' ||\n          arr[i]=== 'O' ||\n          arr[i]=== 'U') {\n        arr.splice(i,1);\n        i -= 1;  // took some thinking and testing to figure this out...\n      console.log(arr);\n\n      }\n    str = arr.join('');\n    }\n    console.log(str);\n  return str;\n}\ndisemvowel(\"blooady heall beeatch\");\n\n\n// Done much better with this code.... not mine\nfunction disemvowel(str) {\n  return str.replace(/[aeiou]/gi, '');\n}",
+			"file": "31-7kyu-disemvowelTrolls.js",
+			"file_size": 669,
+			"file_write_time": 130386057640915226,
+			"settings":
+			{
+				"buffer_size": 760,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "27-7kyu-anagramDetection.js",
+			"settings":
+			{
+				"buffer_size": 1887,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/User/node.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 173.0,
 		"selected_items":
 		[
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Remove Package"
@@ -425,10 +448,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"javas",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"javasc",
@@ -742,6 +761,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"voweled",
 			"r",
 			"n",
 			"8vYmuJHboFvst9y",
@@ -794,8 +814,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "31-7kyu-disemvowelTrolls.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 485.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "27-7kyu-anagramDetection.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1887,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1173.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -867,7 +946,7 @@
 		[
 			[
 				"",
-				"g:\\Users\\Freximus\\Google Drive\\Software-Dev\\Javascript-Practice.sublime-project"
+				"g:\\Users\\Freximus\\Google Drive\\MaroonProduct-web\\MPD-Project.sublime-project"
 			]
 		],
 		"width": 380.0
