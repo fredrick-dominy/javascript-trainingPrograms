@@ -9,32 +9,12 @@
 function solution(number){
   var total = 0;
   for (var i = 0; i < number; i+= 1) {
-    if (i%3 == 0 && i%5 == 0) {
+    if (i%5 == 0 || i%3 == 0) {
       total += i;
-    } else if (i%5 == 0) {
-      total += i;
-    } else if (i%3 == 0) {
-      total += i;
-    }
+    } 
   }
   console.log( 'The function solution(' + number + ') returned ' + total);
   return total;
 }
 
-solution(10);  //  3,5,6,9,10, 12  = 45
-
-// better solution....
-
-function betterSolution(number) {
-  var sum = 0;
-
-  for( var i = 1; i< number; i++ ) {
-    if ( i%3 == 0  ||  i%5 == 0 ) {
-      sum += i;
-    }
-  }
-  console.log( 'The function betterSolution(' + number + ') returned ' + sum);
-  return sum;
-}
-
-betterSolution(10);
+solution(11);  //  3,5,6,9,10, 12  = 45
