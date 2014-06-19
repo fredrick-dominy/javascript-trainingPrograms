@@ -10,33 +10,46 @@ pascal(5) // should return [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
  number in the next row you just take the two numbers above it and
  add them together (except for the edges, which are all "1").
 
-
  */
 
 function pascal(depth) {
   var numberOfRows = depth;
   var pascalArr = [];
-  var newArray = [1];
-
+  var newArray = [];
 
   for ( var j = 0; j < numberOfRows; j += 1){
-
+    console.log('The for loop is on j = ' + j);
     var workingArray = [];
-    var count = newArray.length+1;
-    console.log(count);
-    for (var i = 0; i < count; i += 1) {
-      if (i==0 || i == count -1) {
-        workingArray.push(newArray[0]);
-      } else {
-        workingArray.push(newArray[i-1]+newArray[i]);
+    console.log('newArray is currently: ' + newArray);
+
+    if (newArray[0] === 1) {
+      console.log('newArray exists! and is currently: ' + newArray);
+      var count = newArray.length + 1;
+//      console.log(count);
+      for (var i = 0; i < count; i += 1) {
+        if (i == 0 || i == count - 1) {
+          workingArray.push(newArray[0]);
+        } else {
+          workingArray.push(newArray[i - 1] + newArray[i]);
+        }
+        pascalArr.push(workingArray);
+        console.log('pushed newArray to pascalArr');
       }
-      pascalArr.push(workingArray);
+
+
+    } else {
+      newArray[0] = 1;
+      pascalArr.push(newArray);
+      console.log('New Arr was made to be [1] and pushed newArray to pascalArr');
+      console.log('NOW, newArray is currently: ' + newArray);
     }
 
-  console.log(pascalArr);
+    newArray = workingArray;
+    console.log('newArray is currently: ' + newArray);
+  console.log('pascalArr is currently: ' + pascalArr);
 
   }
-  //console.log(pascalArr);
+  console.log(pascalArr);
 }
 
 pascal(4);
