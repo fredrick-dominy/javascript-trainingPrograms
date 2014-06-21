@@ -13,32 +13,31 @@ pascal(5) // should return [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
  */
 
 function pascal(depth) {
-  var numberOfRows = depth;
-  var pascalArr = [];
-  var builderArr = [];
-  var newArray = [];
-
-  for ( var j = 0; j < numberOfRows; j += 1){
-    var workingArray = [];
-
-    if (newArray[0] === 1) {
-      var count = builderArr.length + 1;
-      for (var i = 0; i < count; i += 1) {
-        if (i == 0 || i == count - 1) {
-          workingArray.push(newArray[0]);
-        } else {
-          workingArray.push( (newArray[(i - 1)] + newArray[i]) );
-        }
+  var count = 0;
+  var pascArray = [];
+  for (var i = 0; i < depth; i += 1) {
+    var array = [];
+    if (count == 0) {
+      array.push(1);
+      pascArray.push(array);
+    } else if (count == 1) {
+      array.push(1,1);
+      pascArray.push(array);
+    } else if (count > 1) {
+      totalArrayItems = count;
+      array.push(1);
+      var tempArr = pascArray[count-1];
+      for (j = 1; j < totalArrayItems; j+=1) {
+        var tempArrCombo = tempArr[j] + tempArr[j-1];
+        array.push(tempArrCombo);
       }
-      pascalArr.push(workingArray);
-    } else {
-      newArray.push(1);
-      pascalArr.push(newArray);
+      array.push(1);
+
+      pascArray.push(array);
     }
-    builderArr = workingArray;
-    workingArray = newArray;
-    console.log(pascalArr);
+    count++;
   }
+return(pascArray);
 }
 
-pascal(4);
+console.log(pascal(12));
