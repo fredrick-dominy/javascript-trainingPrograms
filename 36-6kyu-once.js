@@ -13,22 +13,10 @@
  * logOnce("bar") // -> no effect
  *
  */
-function once(fn) {
-  var count = 0;
-  if (count == 0) {
-    count += 1;
-    return fn;
-  } else {
-    console.log('Undefined');
-    return undefined;
-  }
 
-}
+var once = function(fn) {
 
-function heyThere(){
-  console.log('Hi there')
-}
+  // return a NEW version of fn that can only be called once.
 
-once(heyThere());
-once(heyThere());
-once(heyThere());
+};
+
