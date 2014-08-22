@@ -13,17 +13,22 @@
  * logOnce("bar") // -> no effect
  *
  */
-function once(fn) {
-  var count = 0;
-  if (count == 0) {
-    count += 1;
+var once = function(fn) {
+
+  var count = {
+    executed: false
+  }
+
+  if (count.executed == false) {
+    count.executed = true;
     return fn;
   } else {
-    console.log('Undefined');
+    console.log('Not gonna happen');
     return undefined;
   }
 
-}
+};
+
 
 function heyThere(){
   console.log('Hi there')
