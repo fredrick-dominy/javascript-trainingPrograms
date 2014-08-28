@@ -13,8 +13,8 @@
  * logOnce("bar") // -> no effect
  *
  */
+var count = 0;
 function once(fn) {
-  var count = 0;
   if (count == 0) {
     count += 1;
     return fn;
