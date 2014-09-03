@@ -7,44 +7,41 @@
  */
 
 "use strict";
-var frogJump = function(array) {
+function solution(a) {
     var totalJumpDistance = 0,
-        count = 1,
-        infiniteLoop = false,
+        pathArray = a,
+        frogJumps = 0,
         arrayOfJumpedPositions = [],
-        arrayDistance = array.length;
+        arrayDistance = pathArray.length;
 
-    while (infiniteLoop === false) {
+    for (var i = 0; i < arrayDistance; i += pathArray[i]) {
+        totalJumpDistance += pathArray[i];
+            console.log(Math.abs(totalJumpDistance) + "a");
+            if ((Math.abs(totalJumpDistance)) >= arrayDistance) {
+                frogJumps += 1;
+                console.log(frogJumps + "b");
+                return frogJumps;
+            }
 
-        for (var i = 0; i < arrayDistance; i += array[i]) {
-            console.log("Count is " + count);
-            totalJumpDistance += array[i];
-            console.log("total jump distance is " + totalJumpDistance);
-
-            if (totalJumpDistance > arrayDistance) {
-                console.log("Function RETURNS with count "+count);
-                return count;
-            } else if (arrayOfJumpedPositions.length>array.length) {
-            // look for infinite loop and return -1 if true
-                console.log("This is an infinite loop. RETURN -1");
+            if (arrayOfJumpedPositions.length > arrayDistance) {
+                console.log( -1 + "c");
                 return -1;
             }
-//            arrayOfJumpedPositions.push(totalJumpDistance);
-            arrayOfJumpedPositions.push(array[i]);
-            console.log("arrayOfJumpedPositions is " + arrayOfJumpedPositions);
-            count += 1;
+
+        frogJumps += 1;
+        arrayOfJumpedPositions.push(pathArray[i]);
         }
-    }
+    console.log( -1 + "d");
+    return -1;
+}
 
-};
-
-var path1 = [1, 2, 1, 5], // 1 -> 2 -> 5 -> out  steps = 3
-    path2 = [1,1,1, -1], // 1 -> -1 -> 1 -> -1 -> steps = -1
+var path1 = [1, 2 ,2, -1],
+    path2 = [1,1,1,1,1, -1], // 1 -> -1 -> 1 -> -1 -> steps = -1
     path6 = [3,1,1, -1], // 1 -> -1 -> 1 -> -1 -> steps = -1
-    path3 = [1,2,3,-1],  // 4
+    path3 = [1,2,2,8],  // 3
     path4 = [0],    // -1
-    path5 = [2,4,-1,1]; // 3
+    path5 = [-3]; // 1
 
 
-frogJump(path5);
+solution(path6);
 

@@ -32,10 +32,3 @@ function heyThere(){
 once(heyThere());
 once(heyThere());
 once(heyThere());
-
-for(var i = 0; i < 300; i+=1){
-    names = ["exam", "essay", "quiz"];
-    for(var j = 0; j < names.length; j += 1 ){
-        db.scores.insert( {"student":i, "type":names[j], "score":Math.round( Math.random()*100) } );
-    }
-};
