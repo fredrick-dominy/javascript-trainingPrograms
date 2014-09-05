@@ -26,9 +26,9 @@ String.prototype.toJadenCase = function () {
     function low2Up(match) {
         return match.toUpperCase();
     }
-    return this.replace(rExp, low2Up);
+    var fixThis = this.replace(rExp, low2Up);
+    console.log(fixThis);
 };
 
-
 console.log(   ("How can mirrors be real if our eyes aren't real").toJadenCase()   );
-console.log(   ("Yo what is the deal??").toJadenCase()   );
+console.log(   ("Yo what's the deal??").toJadenCase()   );
