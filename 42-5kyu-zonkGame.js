@@ -34,61 +34,71 @@ Of course, in real Zonk game it's sometimes not worth to collect all combination
 function getScore(dice){ 
     var diceRoll = dice,
         numberOfRolls = diceRoll.length,
+        score = 0,
+
         rollObject = {
-            one:0,
-            two:0,
-            three:0,
-            four:0,
-            five:0,
-            six:0,
-            score:0,
-            collectScore: function() {
-                if (rollObject.one <= 2) {
-                    rollObject.score += 100*rollObject.one;
+            rolls: {
+                one:0,
+                two:0,
+                three:0,
+                four:0,
+                five:0,
+                six:0,
+            },
+
+            categorizeRolls: function() {
+                console.log("We have a good roll");
+                for (var i = numberOfRolls-1; i >= 0; i--) {
+                    if(diceRoll[i]==1){
+                        rollObject.rolls.one++;
+                    } else if (diceRoll[i]==2) {
+                        rollObject.rolls.two++;
+                    } else if(diceRoll[i]==3){
+                        rollObject.rolls.three++;
+                    } else if (diceRoll[i]==4) {
+                        rollObject.rolls.four++;
+                    } else if(diceRoll[i]==5){
+                        rollObject.rolls.five++;
+                    } else if (diceRoll[i]==6){
+                        rollObject.rolls.six++;
+                    }
+                }
+            },
+
+            scoreSingles: function() {
+                // handle Ones
+                if (rollObject.rolls.one <= 2) {
+                    score += 100*rollObject.rolls.one;
+                } else {
+                    score += 1000*(rollObject.rolls.one-2);
                 }
 
-                if (rollObject.five===1) {
-                    rollObject.score += 50;
-                }
-
-                if (rollObject.score===0){
-                    return "Zonk";
-                
+                // handle fives
+                if (rollObject.rolls.five === 1) {
+                    score += 50;
+                } else if (rollObject.rolls.five >= 3) {
+                    score += (rollObject.rolls.five-2)*500;
                 }
             }
         };
 
-    if (!diceRoll || numberOfRolls<1) {
+    if (!diceRoll || numberOfRolls < 1) {
         console.log("Nothing input, dice roll was invalid");
     } else {
-        console.log("We have a good roll");
-        for (var i = numberOfRolls-1; i >= 0; i--) {
-            if(diceRoll[i]==1){
-                rollObject.one++;
-            } else if (diceRoll[i]==2) {
-                rollObject.two++;
-            } else if(diceRoll[i]==3){
-                rollObject.three++;
-            } else if (diceRoll[i]==4) {
-                rollObject.four++;
-            } else if(diceRoll[i]==5){
-                rollObject.five++;
-            } else if (diceRoll[i]==6){
-                rollObject.six++;
-            }
-        };
-
-        rollObject.collectScore();
-        console.log(rollObject.score);
+        rollObject.categorizeRolls();
+        console.log(rollObject.rolls);
+        rollObject.scoreSingles();
+        console.log(score);
     } 
         
 }
 // Examples
 //getScore([]);
-//getScore([1,2,3,6]); // returns 100 = points from one 1
-getScore([3,4,1,1,5]); // returns 250 = points from two 1 and one 5
-// getScore([2,3,2,3,3,2]); // returns 500 = three of 2 + three of 3
-// getScore([1,1,1,1,1,5]); // returns 3050 = five 1 + one 5
+// getScore([1,2,3,6]); // returns 100 = points from one 1
+// getScore([3,4,1,1,5]); // returns 250 = points from two 1 and one 5
+//getScore([2,3,2,3,3,2]); // returns 500 = three of 2 + three of 3
+getScore([1,1,1,1,1,5]); // returns 3050 = five 1 + one 5
+getScore([1,1,5,5,5,5]);
 // getScore([2,3,4,3,6,6]); // returns "Zonk" = no combinations here
 // getScore([2,2,6,6,2,2]); // returns 400 = four 2, this cannot be scored as three pairs
 // getScore([1,3,4,3,4,1]); // returns 750 = three pairs
