@@ -1,5 +1,5 @@
-/* 
-
+ 
+/*
 Zonk is addictive dice game. In each round player rolls 6 dice. Then (s)he composes combinations from them. Each combination gives certain points.
 
 Then player can take one or more dice combinations to his hand and re-roll remaining dice or save his score. Dice in player's hand won't be took into account in subsequent rolls.
@@ -14,7 +14,7 @@ Combination                     Example roll            Points
 Straight (1,2,3,4,5 and 6)      6 3 1 2 5 4             1000 points
 Three pairs of any dice         2 2 4 4 1 1             750 points
 Three of 1                      1 4 1 1                 1000 points
-Three of 2                      2 3 4 2 200             200 points
+Three of 2                      2 3 4 2                 200 points
 Three of 3                      3 4 3 6 3 2             300 points
 Three of 4                      4 4 4                   400 points
 Three of 5                      2 5 5 5 4               500 points
@@ -31,17 +31,66 @@ Of course, in real Zonk game it's sometimes not worth to collect all combination
 
 */
 
+function getScore(dice){ 
+    var diceRoll = dice,
+        numberOfRolls = diceRoll.length,
+        rollObject = {
+            one:0,
+            two:0,
+            three:0,
+            four:0,
+            five:0,
+            six:0,
+            score:0,
+            collectScore: function() {
+                if (rollObject.one <= 2) {
+                    rollObject.score += 100*rollObject.one;
+                }
 
+                if (rollObject.five===1) {
+                    rollObject.score += 50;
+                }
 
+                if (rollObject.score===0){
+                    return "Zonk";
+                
+                }
+            }
+        };
 
+    if (!diceRoll || numberOfRolls<1) {
+        console.log("Nothing input, dice roll was invalid");
+    } else {
+        console.log("We have a good roll");
+        for (var i = numberOfRolls-1; i >= 0; i--) {
+            if(diceRoll[i]==1){
+                rollObject.one++;
+            } else if (diceRoll[i]==2) {
+                rollObject.two++;
+            } else if(diceRoll[i]==3){
+                rollObject.three++;
+            } else if (diceRoll[i]==4) {
+                rollObject.four++;
+            } else if(diceRoll[i]==5){
+                rollObject.five++;
+            } else if (diceRoll[i]==6){
+                rollObject.six++;
+            }
+        };
 
+        rollObject.collectScore();
+        console.log(rollObject.score);
+    } 
+        
+}
 // Examples
-getScore([1,2,3]); // returns 100 = points from one 1
+//getScore([]);
+//getScore([1,2,3,6]); // returns 100 = points from one 1
 getScore([3,4,1,1,5]); // returns 250 = points from two 1 and one 5
-getScore([2,3,2,3,3,2]); // returns 500 = three of 2 + three of 3
-getScore([1,1,1,1,1,5]); // returns 3050 = five 1 + one 5
-getScore([2,3,4,3,6,6]); // returns "Zonk" = no combinations here
-getScore([2,2,6,6,2,2]); // returns 400 = four 2, this cannot be scored as three pairs
-getScore([1,3,4,3,4,1]); // returns 750 = three pairs
-getScore([3,3,3,3]); // returns 600 = four of 3
-getScore([1,2,3,4,5]); // returns 150 = it's not straight
+// getScore([2,3,2,3,3,2]); // returns 500 = three of 2 + three of 3
+// getScore([1,1,1,1,1,5]); // returns 3050 = five 1 + one 5
+// getScore([2,3,4,3,6,6]); // returns "Zonk" = no combinations here
+// getScore([2,2,6,6,2,2]); // returns 400 = four 2, this cannot be scored as three pairs
+// getScore([1,3,4,3,4,1]); // returns 750 = three pairs
+// getScore([3,3,3,3]); // returns 600 = four of 3
+// getScore([1,2,3,4,5]); // returns 150 = it's not straight 
