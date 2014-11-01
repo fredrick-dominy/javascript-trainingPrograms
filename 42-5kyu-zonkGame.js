@@ -37,7 +37,6 @@ function getScore(dice){
         console.log("No dice compadre, the parameter is not an array");
         return "Zonk";
     }
-
     // if an array is input...
     var diceRoll = dice,
         numberOfRolls = diceRoll.length,
@@ -55,11 +54,15 @@ function getScore(dice){
                 six:0,
             },
             init: function() {
-                rollObject.categorizeRolls();
-                rollObject.scoreTrips();
-                rollObject.scorePairs();
-                rollObject.scoreSingles();
-                rollObject.seriesScore();
+                if (numberOfRolls < 1) {
+                    console.log("Dice roll was invalid due to number of rolls being " + numberOfRolls);
+                } else {
+                    rollObject.categorizeRolls();
+                    rollObject.scoreTrips();
+                    rollObject.scorePairs();
+                    rollObject.scoreSingles();
+                    rollObject.seriesScore();
+                }   
             },
             categorizeRolls: function() {
                 for (var i = numberOfRolls-1; i >= 0; i--) {
@@ -79,19 +82,17 @@ function getScore(dice){
                 }
                 console.log(rollObject.rolls);
             },
-
             scoreTrips: function() {
+                // three of a kind with odd multiplier for one
                 var cardNum = 1;
                 for(var trips in rollObject.rolls) {
                     var triplet = rollObject.rolls[trips];
                     if (triplet >=3) {
-                        // one has a higher multiplier
                         if (cardNum==1){
                             multiplier = 1000;
                         } else {
                             multiplier = 100;
                         }
-
                         score += (cardNum*multiplier)*(triplet-2);
                         console.log("A triplet was found, card " + trips);
                         rollObject.rolls[trips] = 0;
@@ -99,7 +100,6 @@ function getScore(dice){
                     cardNum+=1;
                 } 
             },
-
             scorePairs: function() {
                 // iterate through rolls object and count any that === 2
                 for(var pairs in rollObject.rolls) {
@@ -118,29 +118,20 @@ function getScore(dice){
                     } 
                 }
             },
-
             scoreSingles: function() {
                 // handle Ones
-                if (rollObject.rolls.one <= 2) {
+                if (rollObject.rolls.one <= 2 && rollObject.rolls.one > 0) {
                     score += 100*rollObject.rolls.one;
-                    rollObject.rolls.one -= rollObject.rolls.one;
-                } else {
-                    score += 1000*(rollObject.rolls.one-2);
+                    console.log("The one is in play for "+100*rollObject.rolls.one+" points.")
                     rollObject.rolls.one -= rollObject.rolls.one;
                 }
-
                 // handle fives
-                if (rollObject.rolls.five === 1) {
-                    score += 50;
-                    rollObject.rolls.five -= rollObject.rolls.five;
-
-                } else if (rollObject.rolls.five >= 3) {
-                    score += (rollObject.rolls.five-2)*500;
+                if (rollObject.rolls.five >= 1) {
+                    score += rollObject.rolls.five*50;
+                    console.log("The five is in play for 50 points");
                     rollObject.rolls.five -= rollObject.rolls.five;
                 }
-
             },
-
             seriesScore: function() {
                 console.log(rollObject.rolls);
                 if (score===0) {
@@ -152,24 +143,24 @@ function getScore(dice){
                 }
             }
         };
-
-    if (numberOfRolls < 1) {
-        console.log("Dice roll was invalid due to number of rolls being " + numberOfRolls);
-    } else {
+    
         rollObject.init();
-    } 
-        
-}
+};
 // Examples
 // getScore();
-// getScore([]); // invalid, empty array
+getScore([1]); // invalid, empty array
 // getScore([1,2,3,6]); // returns 100 = points from one 1
 // getScore([3,4,1,1,5]); // returns 250 = points from two 1 and one 5
 // getScore([2,3,2,3,3,2]); // returns 500 = three of 2 + three of 3
-// getScore([1,1,1,1,1,5]); // returns 3050 = five 1 + one 5
+// getScore([3,3,1,5,3,5]); // returns 500
 // getScore([1,5,5,5,5]); //  returns 1100 = five 4 + one one
 // getScore([2,3,4,3,6,6]); // returns "Zonk" = no combinations here
 // getScore([2,2,6,6,2,2]); // returns 400 = four 2, this cannot be scored as three pairs
 // getScore([1,3,4,3,4,1]); // returns 750 = three pairs
 // getScore([3,3,3,3]); // returns 600 = four of 3
 // getScore([1,2,3,4,5]); // returns 150 = it's not straight 
+// getScore("Bob");
+// getScore(1);
+// getScore(true);
+// getScore(NaN);
+// getScore(["yes"]);
